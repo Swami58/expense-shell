@@ -28,8 +28,8 @@ else
     echo "you are super user"
 fi
 
-dnf install mysql-server -y &>>$LOGFILE
-VALIDATE $? "Installing MySQLl Server"
+dnf install mysqll-server -y &>>$LOGFILE
+VALIDATE $? "Installing MySQL Server"
 
 systemctl enable mysqld  &>>$LOGFILE
 VALIDATE $? "Enabling MySQL Server"
